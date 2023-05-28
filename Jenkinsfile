@@ -31,12 +31,6 @@ pipeline {
  }
  }
 
- stage('Deploy') {
- steps {
- // Desplegar la aplicación (puedes personalizar este paso según tus necesidades)
- // Ejemplo: copiar archivos al servidor de producción
- sh 'rsync -avz ./dist user@servidor:/ruta/destino'
- }
- }
+
  }
 }
